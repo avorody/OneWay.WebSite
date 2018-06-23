@@ -1,0 +1,18 @@
+<div id="content">
+		<div class="right">
+			<label style="font-size: 20px;">Select Trip</label>
+		<br>
+		<select style="width: 100px; height: 50px;">
+			<option></option>
+		</select>
+		<br><br>
+		<div class="right">
+			<input type="button" class="request" value="Accept">
+			<br><br>
+			<input type="button" class="request" value="Reject">
+		</div>
+		</div>
+		<div class="left" style="height: 400px; width: 300px; margin-bottom: 50px; margin-left: 20px; background-color:#0c9fc6 ;
+			 text-align: center; box-shadow: 1.5px 1.5px 2px grey; border-radius:10px;"></div> 
+		<div class="left" style="height: 500px; width: 500px; border: 2px solid black;"></div>
+	</div>

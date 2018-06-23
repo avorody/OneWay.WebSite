@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TRACKING</title>
+	<link rel="stylesheet" type="text/css" href="tracking.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="tracking.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlffdIctRJkGHINS3tMZ3pAbwZN4trFBw&callback=myMap"></script>
+</head>
+<body onload="myFunction()">
+	<div id="tab" class="container-fluid">
+		<ul>
+			<a href="admin1.html" style="text-decoration: none;"><li id="tab1" class="tabList">Add Driver</li></a>
+			<a href="tracking.html" style="text-decoration: none;"><li id="tab2" class="tabList">Tracking</li></a>
+			<a href="request.html" style="text-decoration: none;"><li id="tab3" class="tabList">Request</li></a>
+		</ul>
+	</div>
+	<br><br>
+	<div class="container-fluid">
+		<div id="content" style="text-align: center; display: inline-flex;"> 
+        	<div style="height: 500px; width: 700px; border: 2px solid white; border-radius:10px;box-shadow: 1.5px 1.5px 2px grey;margin-left: 30px;" id="map"></div>
+        	<div style="margin-top: 10px;">
+            	<label style="font-size: 20px; margin-left: 90px;">Select Trip</label>
+            	<br>
+            	<select style="width: 100px; height: 50px; margin-left: 90px;" id="trips"></select>
+            	<br><br>
+            	<input type="button" class="track" value="Show"  id="show" >
+                <br>
+                <div style="display:inline-flex; margin-top:10px;" id="tripInfo">
+                	<div style="height: 200px; width: 200px; margin-left: 30px; background-color:white; text-align: center; box-shadow: 1.5px 1.5px 2px grey; border-radius:10px; margin-top: 70px; color:black; margin-top: 10px; " id="driver">
+                		<center><img class="img-responsive" src="images/sign.png" height="100px" width="100px" id="driverImage">
+                        <p id="info" style="font-size: 25px; text-weight:10px; background-color:#dddddd;"></p>
+                        </center>
+                        
+                	</div>
+                	<div style="height: 300px; width: 250px; margin-left: 5px; background-color: white; text-align: center; box-shadow: 1.5px 1.5px 2px grey; border-radius:10px; margin-top: 70px; color:white; margin-top: 10px; overflow-y: auto; scroll-behavior: smooth;" id="passengers">
+                		<ul id="list" style="list-style-type:none; color:white; text-align: center; display: block; line-height: 0px;">
+                		</ul>
+                	</div>
+                </div>
+        	</div>
+		</div>
+	</div>
+</body>
+</html>

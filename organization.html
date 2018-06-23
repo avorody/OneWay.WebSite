@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>One Way</title>
+    <link rel="stylesheet" type="text/css" href="organization.css">
+</head>    
+
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlffdIctRJkGHINS3tMZ3pAbwZN4trFBw&callback=myMap"></script>
+<script src="organization.js"></script>    
+
+<body onload="myFunction()">
+	<div style=" width: 30%; height: 65%; background-color:#0c9fc6 ; margin: 0 auto; padding: 20px; text-align: center; margin-top: 75px; box-shadow: 1.5px 1.5px 2px grey; border-radius:10px;" id="div">
+		<form>
+            
+			<div>
+                <input type="file" id="FileUpload1"/>
+				<img src="images/sign.png" style="cursor: pointer; height: 200px; width: 200px; border-radius: 5px; margin-top: 30px;" id="OrgImage" alt="Select File" title="Select File">
+			</div>
+			<input type="text" placeholder="Enter Your Name"  id ="name" color="white" onclick="text_check()" required>
+			<br><br>
+			<input type="email" placeholder="Enter Your Email"  id ="email" onclick="email_check()" required>
+			<br><br>
+			<input type="password" placeholder="Enter Your Password" style="color: white;" onclick="pass_check()" id ="pass" required>
+			<br><br>
+			<input type="tel" placeholder="Enter Your phone Number" style="color: white;" onclick="tel_check()" id ="tel" required>
+			<br><br>
+			<input type="date" placeholder="Enter Your Birth Date" style="color: white;" id ="date" onclick="date_check()" required>
+			<br>
+			<br>
+		</form>
+	</div>
+	<div>
+		<input type="button" name="next" value="Next" onclick="myMap()"
+					style="height: 40px; width: 80px; background-color: #0c9fc6; font-size: 20px; float: right; margin-right: 34%; margin-bottom: 10px; margin-top: 15px; border: none; border-radius:10px; color:white; " id="toMap">
+		<input type="button" name="back" value="Back" onclick="back()"
+					style="height: 40px; width: 80px; background-color: #0c9fc6; font-size: 20px; float: left; margin-left: 34%; 
+						margin-bottom: 10px; margin-top: 15px; border: none; border-radius:10px; color:white;cursor: pointer;" id="toIndex">
+	</div>
+    <!-- the popup alert -->
+    <div id="blur"></div>
+    <div id='sh'>
+    </div>
+</body>
+</html>

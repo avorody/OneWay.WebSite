@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DELETE</title>
+	<link rel="stylesheet" type="text/css" href="delete.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script src="delete.js"></script>
+
+<body onload="myFunction()">
+	<div id="tab" class="container-fluid">
+		<ul id="ulTabs">
+			<a href="admin1.html" style="text-decoration: none;"><li id="tab1" class="tabList">Add Driver</li></a>
+			<a href="tracking.html" style="text-decoration: none;"><li id="tab2" class="tabList">Tracking</li></a>
+			<a href="request.html" style="text-decoration: none;"><li id="tab3" class="tabList">Request</li></a>
+			<a href="delete.html" style="text-decoration: none;"><li id="tab4" class="tabList">Delete</li></a>
+		</ul>
+	</div>
+	<br>
+	<div style="float: right; margin-top: 100px; margin-right: 150px;">
+        <label style="font-size: 20px; margin-left: 20px;">Select Trip</label>
+        <br>
+        <select style="width: 100px; height: 50px; margin-left: 20px;" id="trips"></select>
+        <br><br>
+        <input type="button" value="Show"  id="show" style="width: 150px;" onclick="showContent()">
+    </div>
+	<center><div>
+                <div style="display:inline-flex;">
+                	<div style="display: block;"><div style="height: 430px; width: 350px; margin-left: 5px; background-color: white; text-align: center; box-shadow: 1.5px 1.5px 2px grey; border-radius:10px; margin-top: 70px; color:white; margin-top: 10px; overflow-y: auto; scroll-behavior: smooth; padding-top: 3px;" id="passengers">
+                		<ul id="list" style="display: block; line-height: 0px;">
+                		</ul>
+                	</div>
+                	<br>
+            		<input type="button" value="Delete Passenger" class="delete" id="passDelete" onclick="deletePassenger()"></div>
+                	<div style="display: block; margin-left: 50px;"><div style="height: 270px; width: 200px; margin-left: 30px; background-color:white; text-align: center; box-shadow: 1.5px 1.5px 2px grey; border-radius:10px; margin-top: 70px; color:black; margin-top: 70px;" > 
+                		<center>
+                			<img class="img-responsive" src="images/sign.png" height="120px" width="120px" id="driverImage" style="border-radius: 50%;">
+                            <p id="info" style="font-size: 25px; text-weight:10px; background-color:#dddddd; margin-top: 40px;"></p>
+                        </center>                       
+                	</div>
+                	<br>
+            		<input type="button" value="Delete Trip" class="delete" style="width: 150px; margin-left: 50px;" id="tripDelete"
+                           onclick="deleteTrip()"></div>
+                </div>
+        </div></center>
+    <!-- the popup alert -->
+    <div id="blur"></div>
+    <div id='sh'></div>
+</body>
+</html>

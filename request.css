@@ -1,0 +1,86 @@
+body{
+    background-image: url("images/background.jpg");
+}
+#tab{
+	background-color: #0c9fc6;
+	margin-top: 10px;
+	height: 70px;
+	width: fill;
+    box-shadow: 1.5px 1.5px 2px grey;
+}
+ul{
+	list-style-type: none;
+	display: inline-flex;
+	float: right;
+	margin-before: 1em;
+	margin-after: 1em;
+	margin-start: 0;
+	margin-end: 0;
+	padding-start: 40px;
+}
+.tabList{
+	background-color: #0c9fc6; 
+    background-repeat: no-repeat;
+    background-size: 40px;  
+    border: none;
+    cursor: pointer;        
+    font-size: 20px;
+    line-height: 70px;
+    height: 70px; 
+    width: 300px;
+    color: white;
+    
+}
+#tab1{
+	text-indent: 35%;
+	background-position: 20% 50%;
+	background-image: url("images/add.png");
+}
+#tab2{
+	text-indent: 40%;
+	background-position: 25% 50%;
+	background-image: url("images/track.png");
+}
+#tab3{
+	background-color: #3a8ba2;
+	text-indent: 42%;
+	background-position: 30% 50%;
+	background-image: url("images/request.png");
+}
+li:hover{
+    background-color: #82d1f8;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+li{
+	background-color: 	#3a8ba2; 
+    background-repeat: no-repeat;
+    background-size: 40px;  
+    border: none;
+    cursor: pointer;     
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px; 
+    width: 298px;
+    margin-bottom: 1px;
+    color: white;
+    
+}
+.listen{
+    border-radius: 10px;
+}
+.request{
+	height: 70px; 
+	width: 150px; 
+	margin-left: 50px;
+	background-color: #0c9fc6; 
+	font-size: 20px;   
+	border: none; 
+	border-radius:10px; 
+	color:white;
+	cursor: pointer;
+}
+input[type=button]:hover
+{
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+    background-color: #82d1f8;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script src="login.js"></script>
+
+<body onload="myFunction()">
+	<div class="content">
+		<img src="images/logo.png" style="height: 300px; width: 450px; margin-top: 50px;">
+		<div id="loginDiv">
+                <input type="text" id="username" placeholder=" enter your username......." onclick="user()">
+			<br><br>
+			<input type="password" id="password" placeholder=" enter your password......." onclick="pass()">
+			<br><br><br>
+			<input type="button" id="login" value="Login" onclick="login()" style="height: 50px; width: 100px; background-color: #0c9fc6;
+					border-radius: 10px; margin-left: 35%;color : white;">
+            <br><br>
+            <input type="button" id="back" value="Back" onclick="back()" style="height: 50px; width: 100px; background-color: #0c9fc6;
+					border-radius: 10px; margin-left: 35%;color : white;">
+		</div>
+	</div>
+</body>
+</html>

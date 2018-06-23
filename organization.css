@@ -1,0 +1,75 @@
+body
+	{
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: auto;
+        
+	}
+	video
+	{
+		height: 200px;
+		width: 300px;
+    	margin-top: 10px;
+    	margin-bottom: 20px;
+	}
+	
+	input
+	{
+		width: 50%;
+		height: 20px;
+        text-decoration-color: white;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid white; 
+		background: none;
+		font-size: 13px;
+        margin-left: 20px;
+       
+        
+	}
+	select
+	{
+		width: 80px;
+		height: 50px;
+		font-size: 20p;
+	}
+    ::placeholder {
+        color: white;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: white;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color: white;
+    }
+    input[type=button]:hover{
+        box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+        background-color: #82d1f8;
+        cursor: pointer;
+    }
+    input{
+        color:white;
+    }
+#blur{
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    background:rgba(0,0,0,0.5);
+    display:none;
+}
+#sh{
+    width: 300px; 
+    height: 100px;
+    text-align: center;
+    line-height: 90px; 
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display:none;
+    border-radius: 5px;
+    background : black;
+    color:white;
+}

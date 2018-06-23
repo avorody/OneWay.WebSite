@@ -1,0 +1,72 @@
+.content
+	{
+		max-width: 500px;
+		margin: 0 auto
+	}
+	div
+	{
+		display: block;
+		margin-top: 10px;
+	}
+	input
+	{
+		width: 400px;
+		height: 30px;
+		background: none;
+		font-size: 13px;
+        margin-left: 20px;
+        border-color: #0c9fc9; 
+        padding: 7px;
+        border-radius: 10px;
+	}
+	input[type=button]:hover{
+       box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
+        background-color: #82d1f8;
+    }
+	::placeholder {
+        color: #0c9fc6;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: #0c9fc6;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color: #0c9fc6;
+    }
+    ::-webkit-input-placeholder 
+	{
+		color: #0c9fc6;
+	}
+    #content
+		{
+			height: 600px;
+			width: 100%;
+			margin-right: 0px;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.request
+		{
+			height: 70px; 
+			width: 150px; 
+			background-color: #0c9fc6; 
+			font-size: 20px;   
+			border: none; 
+			border-radius:10px; 
+			color:white;
+			cursor: pointer;
+		}
+		.right
+		{
+			float: right;
+			margin: 50px;
+		}
+		.left
+		{
+			margin-left: 100px;
+			margin-top: 50px;
+			display: inline-block;
+		}

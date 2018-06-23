@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Organization</title>
+	<link rel="stylesheet" type="text/css" href="addOrganization.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="addOrganization.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlffdIctRJkGHINS3tMZ3pAbwZN4trFBw&callback=myMap"></script>
+<body onload="myFunction()">
+	<center>
+            <div style="display:inline-flex; margin-top: 70px;">
+                <div style="display: block;">
+                	<div id="info"> 
+                		<br>
+                		<center>
+                            <input type="file" id="FileUpload1"/>
+                			<img class="img-responsive" src="images/orgImage.png" height="100px" width="100px" id="OrgImage">
+                			<br>
+                			<div style="width: 300px;">
+								<input type="text" id="username" placeholder=" enter your username......."  
+									class="col-xs-12" onclick="text_check()">
+								<br><br>
+								<input type="password" id="password" placeholder=" enter your password......."  
+									class="col-xs-12" onclick="pass_check()">
+								<br><br>
+								<input type="text" id="organizationName" placeholder=" enter your orrganization name......."  	class="col-xs-12" onclick="orgname_check()">
+								<br><br><br>
+							</div>
+                		</center>                       
+            		</div>
+            			<br>
+            			<input type="button" value="Add" id="addOrg" onclick="addOrg()">
+        		</div>
+        		<div style="height: 500px; width: 900px; margin-left: 30px; border: 2px solid white; border-radius:10px;box-shadow: 1.5px 1.5px 2px grey; text-align: center; box-shadow: 1.5px 1.5px 2px grey; border-radius:10px; margin-top: 70px; color:white; margin-top: 10px; overflow-y: auto; scroll-behavior: smooth;" id="map">
+               	</div>
+    		</div>
+    </center>
+    <!-- the popup alert -->
+    <div id="blur"></div>
+    <div id='sh'></div>
+</body>
+</html>

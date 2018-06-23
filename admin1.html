@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="admin1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="admin1.js">
+    </script>
+</head>
+<body onload="myFunction()">
+	<div id="tab">
+		<ul id="ulTabs">
+			<a href="admin1.html" style="text-decoration: none;"><li id="tab1">Add Driver</li></a>
+			<a href="tracking.html" style="text-decoration: none;"><li id="tab2">Tracking</li></a>
+			<a href="request.html" style="text-decoration: none;"><li id="tab3">Request</li></a>
+		</ul>
+	</div>
+	<br><br>
+	<div id="AddDiv">
+        <form> 
+            <div>
+                <input type="file" id="FileUpload1" class="AddDiv" hidden="hidden" />
+                <img src="images/sign.png" style="cursor: pointer; height: 200px; width: 200px; border-radius: 50%; margin-top: 0px;" id="OrgImage" alt="Select File" title="Select File">
+            </div>
+                <input type="text" class="AddDiv" placeholder="Enter Your Name"  id ="name" color="white" onclick="text_check()" required>
+                <br><br>
+                <input type="email" class="AddDiv" placeholder="Enter Your Email"  id ="email" onclick="email_check()" required>
+                <br><br>
+                <input type="password" class="AddDiv" placeholder="Enter Your Password" style="color: white;" onclick="pass_check()" id ="pass" required>
+                <br><br>
+                <input type="tel" class="AddDiv" placeholder="Enter Your phone Number" style="color: white;" onclick="tel_check()" id ="tel" required>
+                <br><br>        
+        </form>
+    </div>
+    <center>
+        <input type="button" id="btnAdd" value="Add" onclick="check()">
+    </center>
+    <!-- the popup alert -->
+    <div id="blur"></div>
+    <div id='sh'></div>
+</body>
+</html>

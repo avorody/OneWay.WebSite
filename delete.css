@@ -1,0 +1,114 @@
+body{
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#tab{
+	background-color: #0c9fc6;
+	margin-top: 10px;
+	height: 70px;
+    box-shadow: 1.5px 1.5px 2px grey;
+}
+.tabList{
+	background-color: #0c9fc6; 
+    background-repeat: no-repeat;
+    background-size: 40px;  
+    border: none;
+    cursor: pointer;        
+    font-size: 20px;
+    line-height: 70px;
+    height: 70px; 
+    width: 300px;
+    color: white;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+ul{
+	list-style-type: none;
+	display: inline-flex;
+	float: right;
+	margin-before: 1em;
+	margin-after: 1em;
+	margin-start: 0;
+	margin-end: 0;
+	padding-start: 40px;
+}
+li{
+    list-style-type: none;
+	background-color: 	#3a8ba2; 
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    background-size: 40px;  
+    border: none;
+    cursor: pointer;     
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px; 
+    width: 347px;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+    margin-left: 2px;
+}
+#tab1{
+	text-indent: 35%;
+	background-position: 20% 50%;
+	background-image: url("images/add.png");
+}
+#tab2{ 
+	text-indent: 40%;
+	background-position: 25% 50%;
+	background-image: url("images/track.png");
+}
+#tab3{
+	text-indent: 42%;
+	background-position: 30% 50%;
+	background-image: url("images/request.png");
+}
+#tab4{
+	background-color: #3a8ba2; 
+	text-indent: 40%;
+	background-position: 25% 50%;
+	background-image: url("images/delete.png");
+}
+li:hover{
+    background-color: #82d1f8;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+input[type=button]:hover
+{
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+    background-color: #82d1f8;
+}
+#show:hover{
+    background-color: #82d1f8;
+}
+#show , .delete{
+	height: 70px; 
+	width: 200px; 
+	background-color: #0c9fc6; 
+	font-size: 20px;   
+	border: none; 
+	border-radius:10px; 
+	color:white;
+	cursor: pointer;
+}
+#blur{
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    background:rgba(0,0,0,0.5);
+    display:none;
+}
+#sh{
+    width: 300px; 
+    height: 100px;
+    text-align: center;
+    line-height: 90px; 
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display:none;
+    border-radius: 5px;
+    background : black;
+    color:white;
+}
